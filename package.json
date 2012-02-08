@@ -11,8 +11,7 @@
         "node" : ">=0.6.5"
     }
 ,   "dependencies":    {   
-		"perfectapi": ">=0.0.14",
-		"redis": ">=0.7.1",
+		"perfectapi": ">=0.0.18",
 		"async": ">=0.1.15"
     }
 ,   "repository" :

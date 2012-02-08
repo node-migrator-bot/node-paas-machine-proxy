@@ -13,5 +13,8 @@
 			"verb": "GET"
 		}
 	], 
-	"path": "paas/proxy"
+	"path": "paas/proxy",
+	"environment": [
+		{"parameter": "SERVICE_REGISTRY_PORT", "required":true, "default":"3001", "description":"port number that local service proxy is running on"}
+	]
 }
