@@ -1,0 +1,23 @@
+{   "name":             "paas-machine-proxy"
+,   "version":          "0.0.1"
+    ,"description": "Per-machine Reverse Proxy for perfectapi self-hosted PaaS solution"
+,   "author":  {"name": "Steve Campbell", "email": "steve@perfectapi.com" }
+    ,"keywords": "paas,reverse proxy,service"
+    ,"homepage": "http://blog.perfectapi.com/2012/writing-a-paas-using-node.js-in-1-week-monday/"
+    ,"bugs": {"url": "https://github.com/perfectapi/node-paas-machine-proxy/issues", "email": "paas@perfectapi.com" }
+    ,"main": "./bin/proxy.js"
+	,"bin": "./bin/proxy.js"
+,   "engines": {
+        "node" : ">=0.6.5"
+    }
+,   "dependencies":    {   
+		"perfectapi": ">=0.0.14",
+		"redis": ">=0.7.1",
+		"async": ">=0.1.15"
+    }
+,   "repository" :
+    {
+        "type" : "git",
+        "url" : "git://github.com/perfectapi/node-paas-machine-proxy.git"
+    }
+}

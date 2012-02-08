@@ -1,0 +1,17 @@
+{	"exports": "reverseProxy",
+	"signature": [
+		{ 
+			"name": "getLoad",
+			"synopsis": "Retrieves the load index of the server, 1.0 is at capacity",
+			"description": "",
+			"verb": "GET"
+		},
+		{ 
+			"name": "getCulprit",
+			"synopsis": "Returns a reference to the instance that is hogging most of the capacity of the server",
+			"description": "",
+			"verb": "GET"
+		}
+	], 
+	"path": "paas/proxy"
+}
