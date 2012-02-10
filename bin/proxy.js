@@ -28,7 +28,8 @@ parser.on("server", function(config, callback) {
   
   perfectapi.proxy(endpoint, function(err, registry) {
     //now we have a reference to the registry running on the same machine
-    setInterval(function() {
+    
+    var poller = function() {
       var config = {}
       registry.listServices(config, function(err, result) {
         if (err) return console.log(err);
@@ -37,7 +38,11 @@ parser.on("server", function(config, callback) {
           if (err) return console.log(err);
         });
       })
-    }, pollInterval);
+    }
+    
+    poller();
+    
+    setInterval(poller, pollInterval);
   });
 })
 
