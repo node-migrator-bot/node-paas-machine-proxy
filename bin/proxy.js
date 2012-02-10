@@ -24,9 +24,7 @@ parser.on("getCulprit", function(config, callback) {
 });
 
 parser.on("server", function(config, callback) {
-  var port = config.environment.SERVICE_REGISTRY_PORT;
-  var endpoint = 'http://localhost:' + port + '/paas/registry';
-  //endpoint = 'http://services.perfectapi.com/paas/registry';    //for testing
+  var endpoint = config.environment.SERVICE_REGISTRY_URL;
   
   perfectapi.proxy(endpoint, function(err, registry) {
     //now we have a reference to the registry running on the same machine

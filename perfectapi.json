@@ -15,6 +15,6 @@
 	], 
 	"path": "paas/proxy",
 	"environment": [
-		{"parameter": "SERVICE_REGISTRY_PORT", "required":true, "default":"3001", "description":"port number that local service proxy is running on"}
+		{"parameter": "SERVICE_REGISTRY_URL", "required":true, "description":"Full url of service registry endpoint"}
 	]
 }
